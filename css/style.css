@@ -1,0 +1,51 @@
+html, body {
+    background: #eee;
+}
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+label.col-form-label {
+    text-align: right;
+}
+div.grid {
+    margin: 10px 0;
+    /*border: 1px solid #aaa;*/
+}
+div.square {
+    border: 1px solid #aaa;
+    text-align: center;
+    color: #444444;
+    float: left;
+    padding: 2px;
+}
+div.square.marked {
+    color: #ffffff;
+}
+div.square.marked.hide {
+    color: #444444;
+}
+input[type=color].form-control {
+    padding: 2px;
+    height: 38px;
+    width: 80px;
+}
+div.buttons {
+    text-align: center;
+}
+
+@media print {
+    header, footer, form, div.alert, div.buttons {
+        display: none;
+    }
+
+    div.card, div.card-body {
+        padding: 0;
+        border: none;
+    }
+}
